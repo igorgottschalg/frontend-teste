@@ -10,7 +10,7 @@ https://www.figma.com/file/Pdd6VRN08X6kCyZlIeuWEG/Teste-Developers
 - Fazer um fork deste repositório para sua conta do Github
 
 ## O que vamos avaliar
-- Capacidade de apredizado
+- Capacidade de aprendizado
 - Capacidade de criar interfaces com alta fidelidade a partir de layouts/protótipos.
 - Semântica do seu código HTML
 - Estruturação do seu CSS de maneira reaproveitável e utilização de especificações mais recentes (flexbox, grid layout)
