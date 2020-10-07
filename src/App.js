@@ -1,9 +1,13 @@
 import React from 'react';
 
-function App() {
+import GlobalStyles from './assets/styles/global';
+import Landing from './pages/Landing';
+
+export default function App() {
   return (
-    <h1>Figma land</h1>
+    <>
+      <GlobalStyles />
+      <Landing />
+    </>
   );
 }
-
-export default App;
