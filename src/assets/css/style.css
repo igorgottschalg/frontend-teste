@@ -4,12 +4,45 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  /* color: white;
-  background-color: #7834be; */
-  /* background-color: #333333; */
+}
+body {
+  background-color: #252b42;
+  color: white;
 }
 
-.items {
-  display: grid;
-  grid-column: 1fr 1fr 1fr;
+.desktop-presentation {
+  background-image: url('../img/background-content.svg');
+  background-size: 100vw 100vh;
+}
+
+.desktop-hero > img {
+  height: 1000px;
+  width: 1000px;
+  background-color: violet;
+}
+.desktop-navbar {
+}
+
+.desktop-features {
+}
+
+.desktop-hero {
+}
+
+.desktop-cta {
+}
+
+.desktop-partners {
+}
+
+.desktop-testimonials {
+}
+
+.desktop-pricing {
+}
+
+.desktop-contact {
+}
+
+.desktop-footer {
 }
