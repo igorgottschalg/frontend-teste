@@ -1,35 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('typography.css');
+
+:root {
+  --pink: #ef2779;
+  --purple: #7834be;
+  --blue: #38a3f1;
+  --text: #252b42;
+  --second-text: #374754;
+  --light-text: #ffffff;
+  --dark-background: #252b42;
+  --light-background: #ffffff;
+  --background-gradient: linear-gradient(
+    39.97deg,
+    var(--pink) 0.79%,
+    var(--purple) 79.29%
+  );
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 16px;
 }
+
 body {
-  /* background-color: #252b42; */
+  color: white !important;
+  background-color: var(--dark-background);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
   color: white;
 }
 
 .desktop-presentation {
   background-image: url('../img/background-content.svg');
-  /* background-size: 768px 1366px; */
 }
 
 .desktop-navbar {
   font-size: 15px;
-  border: 1px solid black;
-  display: flex;
+  height: 156px;
 }
 
+.desktop-navbar,
 .mailing-input,
-.desktop-navbar .left ul,
-.desktop-navbar .left ul {
-  display: flex;
+.desktop-navbar .right ul {
+  display: inline-flex;
+  font-size: 15px;
+  /* padding: 10px 0px 0px 10px; */
 }
 
-.desktop-navbar .left ul {
+.desktop-navbar .right {
+  /* position: absolute; */
+  /* right: 0; */
+  padding: 1em;
+}
+
+.desktop-navbar .right ul {
   list-style: none;
-  text-decoration: none;
+}
+
+.desktop-navbar .right ul li,
+.mailing-input {
+}
+
+.mailing-input {
+}
+
+.master-button {
+  background: var(--pink);
+  padding: 18px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .desktop-hero > img {
@@ -40,7 +88,7 @@ body {
 
 .desktop-presentation .title-frame {
   /* background-color: violet; */
-  float: right;
+  /* float: right; */
 }
 
 .desktop-features {
