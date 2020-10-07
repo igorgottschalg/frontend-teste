@@ -6,21 +6,41 @@
   font-family: 'Roboto', sans-serif;
 }
 body {
-  background-color: #252b42;
+  /* background-color: #252b42; */
   color: white;
 }
 
 .desktop-presentation {
   background-image: url('../img/background-content.svg');
-  background-size: 100vw 100vh;
+  /* background-size: 768px 1366px; */
+}
+
+.desktop-navbar {
+  font-size: 15px;
+  border: 1px solid black;
+  display: flex;
+}
+
+.mailing-input,
+.desktop-navbar .left ul,
+.desktop-navbar .left ul {
+  display: flex;
+}
+
+.desktop-navbar .left ul {
+  list-style: none;
+  text-decoration: none;
 }
 
 .desktop-hero > img {
-  height: 1000px;
-  width: 1000px;
-  background-color: violet;
+  /* height: 784px;
+  width: 912px; */
+  /* background-color: violet; */
 }
-.desktop-navbar {
+
+.desktop-presentation .title-frame {
+  /* background-color: violet; */
+  float: right;
 }
 
 .desktop-features {
