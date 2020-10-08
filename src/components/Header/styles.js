@@ -2,6 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 143.9rem;
+  margin: 0 auto;
   width: 100%;
   height: 10rem;
   align-items: center;
