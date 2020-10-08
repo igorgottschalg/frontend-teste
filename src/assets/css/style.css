@@ -42,33 +42,47 @@ a:visited {
 }
 
 .desktop-navbar {
-  font-size: 15px;
-  height: 156px;
+  height: 8em;
+  border: 5px solid black;
+  /* background-color: violet; */
+  /* padding: 2em; */
 }
 
 .desktop-navbar,
 .mailing-input,
 .desktop-navbar .right ul {
   display: inline-flex;
-  font-size: 15px;
-  /* padding: 10px 0px 0px 10px; */
+  padding: 10px 0px 0px 10px;
 }
 
 .desktop-navbar .right {
-  /* position: absolute; */
-  /* right: 0; */
+  position: absolute;
+  right: 0;
   padding: 1em;
 }
 
 .desktop-navbar .right ul {
   list-style: none;
+  justify-content: space-around;
+  /* background-color: violet; */
 }
 
 .desktop-navbar .right ul li,
 .mailing-input {
+  padding: 21px;
 }
 
-.mailing-input {
+.mailing-input input {
+  border: 1px solid #e8e8e8;
+  border-radius: 39px;
+  text-align: start;
+  flex-direction: column;
+  height: 40px;
+  padding-left: 1em;
+}
+
+.mailing-input input::placeholder {
+  margin-left: 5em;
 }
 
 .master-button {
@@ -78,6 +92,11 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pricing-style-1-contrast > button,
+.desktop-presentation .right > button {
+  color: var(--pink);
 }
 
 .desktop-hero > img {
