@@ -18,7 +18,7 @@ export const Container = styled.div`
 
     h5 {
       width: 100%;
-      max-width: 30rem;
+      max-width: 20.8rem;
       font-size: 1.2rem;
       font-weight: 700;
       line-height: 1.8rem;

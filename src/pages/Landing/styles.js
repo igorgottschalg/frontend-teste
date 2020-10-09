@@ -376,3 +376,36 @@ export const ContactSection = styled.section`
     display: flex;
   }
 `;
+
+export const Footer = styled(section)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 13rem 0;
+
+  .pages {
+
+    h3 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 2.5rem;
+    }
+
+    ul {
+      list-style: none;
+
+      li+li {
+        margin-top: 1.6rem;
+      }
+
+      li {
+        a {
+          text-decoration: none;
+          color: #FFF;
+
+        }
+      }
+    }
+  }
+`;
+

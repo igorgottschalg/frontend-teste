@@ -5,6 +5,7 @@ import Partner from '../../components/Partner';
 import PriceItem from '../../components/PriceItem';
 import Form from '../../components/Form';
 import Contact from '../../components/Contact';
+import Map from '../../components/Map';
 
 import heroImg from '../../assets/images/hero.svg';
 import productsIcon from '../../assets/images/products-icon.svg';
@@ -28,6 +29,7 @@ import {
   Testimonials,
   Pricing,
   ContactSection,
+  Footer,
 } from './styles';
 
 export default function Landing() {
@@ -191,10 +193,28 @@ export default function Landing() {
 
         <div className="content">
           <Form />
-          
+
           <Contact dark />
         </div>
       </ContactSection>
+
+      <Footer>
+        <div className="pages">
+          <h3>Pages</h3>
+
+          <ul>
+            <li><a href="#">Eleanor Edwards</a></li>
+            <li><a href="#">Ted Robertson</a></li>
+            <li><a href="#">Annette Russell</a></li>
+            <li><a href="#">Jennie Mckinney</a></li>
+            <li><a href="#">Gloria Richards</a></li>
+          </ul>
+        </div>
+
+        <Map />
+
+        <Contact />
+      </Footer>
     </>
   );
 }
