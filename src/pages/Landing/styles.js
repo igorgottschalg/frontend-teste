@@ -167,13 +167,15 @@ export const Subscribe = styled(section)`
 
   h3 {
     font-size: 2.2rem;
+    line-height: 3.3rem;
   }
 
   h2 {
     font-size: 4.6rem;
     font-weight: 400;
+    line-height: 2.7rem;
 
-    margin: 0.7rem 0 6.9rem;
+    margin: 2rem 0 6.9rem 0;
   }
 
   p {
@@ -203,6 +205,54 @@ export const Subscribe = styled(section)`
   button {
     background: #EF2779;
     color: #FFF;
+    cursor: pointer;
+  }
+`;
+
+export const Partners = styled(section)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: 4.6rem;
+    font-weight: 400;
+    margin: 13rem 0 2.7rem 0;
+  }
+
+  h4 {
+    max-width: 29.8rem;
+    text-align: center;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 21.8rem);
+    grid-gap: 9rem 7.2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 0 9rem 0;
+
+    width: 100%;
+    max-width: 79.8rem;
+    height: 100%;
+  }
+
+  button {
+    background: #38A3F1;
+    
+    width: 23.6rem;
+    height: 6.5rem;
+    border-radius: 5rem;
+    margin-bottom: 8rem;
+    
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #FFF;
+
+    border: 0;
+    outline: none;
+    cursor: pointer;
   }
 `;
 
