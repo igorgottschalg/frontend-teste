@@ -3,6 +3,7 @@ import Header from '../../components/Header';
 import Feature from '../../components/Feature';
 import Partner from '../../components/Partner';
 import PriceItem from '../../components/PriceItem';
+import Contact from '../../components/Contact';
 
 import heroImg from '../../assets/images/hero.svg';
 import productsIcon from '../../assets/images/products-icon.svg';
@@ -24,7 +25,7 @@ import {
   Subscribe,
   Partners,
   Testimonials,
-  Pricing,
+  Pricing
 } from './styles';
 
 export default function Landing() {
@@ -181,6 +182,8 @@ export default function Landing() {
           />
         </div>
       </Pricing>
+    
+      <Contact />
     </>
   );
 }

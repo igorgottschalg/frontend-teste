@@ -4,7 +4,7 @@ const section = styled.section`
   width: 100%;
   max-width: 143.9rem;
   margin: 0 auto;
-  padding: 0.8rem;
+  padding: 1rem;
 `;
 
 export const Hero = styled.section`
