@@ -256,3 +256,66 @@ export const Partners = styled(section)`
   }
 `;
 
+export const Testimonials = styled(section)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 11.1rem 0 10rem 0;
+
+  h2 {
+    font-size: 4.6rem;
+    font-weight: 400;
+  }
+
+  > img {
+    margin: 9rem 0 6rem 0;
+  }
+
+  h4 {
+    max-width: 68.3rem;
+  }
+
+  .people-container {
+    display: grid;
+    grid-template-areas:
+      "img title title"
+      "img link link";
+
+    margin: 6rem 0 8rem 0;
+    align-items: center;
+
+    img {
+      grid-area: img;
+      margin-right: 1.3rem;
+    }
+
+    h5 {
+      grid-area: title;
+      font-size: 1.2rem;
+    }
+
+    a {
+      grid-area: link;
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-decoration: none;
+      color: #FFF;
+    }
+  }
+
+  button {
+    background: #38A3F1;
+    width: 28rem;
+    height: 6.5rem;
+    border-radius: 5rem;
+
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+    font-size: 2.2rem;
+    font-weight: 3.3rem;
+    color: #FFF;
+  }
+`;

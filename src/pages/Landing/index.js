@@ -13,6 +13,8 @@ import androidIcon from '../../assets/images/logo-android.svg';
 import apiaryIcon from '../../assets/images/logo-apiary.svg';
 import appleIcon from '../../assets/images/logo-apple.svg';
 import basecampIcon from '../../assets/images/logo-basecamp.svg';
+import dropboxIcon from '../../assets/images/dropbox-icon.svg';
+import avatarImg from '../../assets/images/avatar.svg';
 
 import {
   Hero,
@@ -20,6 +22,7 @@ import {
   TryFree,
   Subscribe,
   Partners,
+  Testimonials,
 } from './styles';
 
 export default function Landing() {
@@ -136,6 +139,21 @@ export default function Landing() {
 
         <button>Try For Free</button>
       </Partners>
+    
+      <Testimonials>
+        <h2>Testimonials</h2>
+        <img src={dropboxIcon} alt="Dropbox" />
+
+        <h4>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</h4>
+
+        <div className="people-container">
+          <img src={avatarImg} alt="" />
+          <h5>Organize across</h5>
+          <a href="#">Ui designer</a>
+        </div>
+
+        <button>More Testimonials</button>
+      </Testimonials>
     </>
   );
 }
