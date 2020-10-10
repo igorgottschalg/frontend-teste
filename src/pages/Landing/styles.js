@@ -4,13 +4,14 @@ const section = styled.section`
   width: 100%;
   max-width: 143.9rem;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem;
 `;
 
 export const Hero = styled.section`
   width: 100%;
   height: 100vh;
   background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
+  text-align: center;
   
   .wrapper {
     display: flex;
@@ -173,7 +174,8 @@ export const Subscribe = styled(section)`
   h2 {
     font-size: 4.6rem;
     font-weight: 400;
-    line-height: 2.7rem;
+    line-height: 5.7rem;
+    text-align: center;
 
     margin: 2rem 0 6.9rem 0;
   }
