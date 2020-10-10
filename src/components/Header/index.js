@@ -12,28 +12,7 @@ export default function Header() {
       <img src={logoImg} alt="Figma Land" />
 
       <NavBar />
-
-      <div className="wrapper" >
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-
-        <div id="subscribe">
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-          />
-
-          <button>Subscribe</button>
-        </div>
-      </div>
+      
     </Container>
   );
 }
