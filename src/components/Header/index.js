@@ -7,7 +7,7 @@ import { Container } from './styles';
 export default function Header() {
   return (
     <Container>
-      <img src={logoImg} alt="Figma Land"/>
+      <img src={logoImg} alt="Figma Land" />
 
       <div>
         <nav>

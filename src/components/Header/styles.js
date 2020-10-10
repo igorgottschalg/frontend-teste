@@ -6,13 +6,15 @@ export const Container = styled.header`
   top: 0;
   left: 0;
   right: 0;
-  max-width: 143.9rem;
-  margin: 0 auto;
+  
   width: 100%;
+  max-width: 143.9rem;
   height: 10rem;
+  
   align-items: center;
   justify-content: space-between;
-  padding: 0 5rem;
+  padding: 0 2rem;
+  margin: 0 auto;
 
   div {
     display: flex;
@@ -61,6 +63,7 @@ export const Container = styled.header`
         border: 0;
         outline: none;
         padding: 0 2.5rem;
+        width: 100%;
       }
 
       input {
@@ -68,6 +71,7 @@ export const Container = styled.header`
         color: #18171D;
         font-size: 1.4rem;
         margin-right: 1.5rem;
+        min-width: 14rem;
       }
 
       button {
@@ -76,10 +80,12 @@ export const Container = styled.header`
         font-size: 1.6rem;
         font-weight: 500;
         cursor: pointer;
+        max-width: 14.1rem;
       }
     }
   }
 
+  // animações
   @keyframes fade {
     from {
       width: 40%;
@@ -91,4 +97,36 @@ export const Container = styled.header`
       height: 0.8rem;
     }
   }
+
+  // responsividade
+  @media(max-width: 1010px) {
+    nav ul li a {
+      padding: 0.8rem !important;
+      
+      :after {
+        right: 50%;
+        left: 50%;
+        top: 0;
+      }
+    }
+  }
+
+  @media(max-width: 920px) {
+
+    #subscribe {
+      margin-left: 1rem !important;
+
+      button,
+      input {
+        padding: 0 1rem !important;
+      }
+    }
+  }
+
+  @media(max-width: 790px) {
+    div {
+      display: none;
+    }
+  }
+
 `;
