@@ -411,5 +411,13 @@ export const Footer = styled(section)`
       }
     }
   }
+
+  @media ( max-width: 880px) {
+    flex-direction: column;
+
+    iframe {
+      margin: 5.5rem 0 6.5rem 0;
+    }
+  }
 `;
 
