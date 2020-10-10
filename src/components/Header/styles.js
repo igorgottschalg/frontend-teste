@@ -16,7 +16,7 @@ export const Container = styled.header`
   padding: 0 2rem;
   margin: 0 auto;
 
-  div {
+  div.wrapper {
     display: flex;
     align-items: center;
 
@@ -56,6 +56,7 @@ export const Container = styled.header`
 
     #subscribe {
       margin-left: 3rem;
+      display: flex;
 
       input, button {
         height: 4rem;
@@ -124,7 +125,7 @@ export const Container = styled.header`
   }
 
   @media(max-width: 790px) {
-    div {
+    div.wrapper {
       display: none;
     }
   }

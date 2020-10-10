@@ -2,6 +2,8 @@ import React from 'react';
 
 import logoImg from '../../assets/images/logo.svg';
 
+import NavBar from '../NavBar';
+
 import { Container } from './styles';
 
 export default function Header() {
@@ -9,7 +11,9 @@ export default function Header() {
     <Container>
       <img src={logoImg} alt="Figma Land" />
 
-      <div>
+      <NavBar />
+
+      <div className="wrapper" >
         <nav>
           <ul>
             <li><a href="#">Home</a></li>
