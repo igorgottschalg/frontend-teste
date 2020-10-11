@@ -9,7 +9,7 @@ const section = styled.section`
 
 export const Hero = styled.section`
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
   text-align: center;
   position: relative;
@@ -55,7 +55,7 @@ export const Hero = styled.section`
   /* Estilização da 'wave' na section */
   .wave {
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -87,6 +87,8 @@ export const Hero = styled.section`
   }
 
   @media (max-width: 880px) {
+    height: auto;
+
     .wrapper {
       width: 100%;
       flex-direction: column;
@@ -109,6 +111,12 @@ export const Hero = styled.section`
           transform: translate(-50%, -50%);
         }
       }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .wrapper .content button {
+      bottom: -10rem;
     }
   }
 
@@ -418,6 +426,18 @@ export const ContactSection = styled.section`
     display: flex;
     width: 100%;
     justify-content: center;
+  }
+
+  @media (max-width: 800px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+
+      form {
+        order: 1;
+        margin-top: 7.669rem;
+      }
+    }
   }
 `;
 
