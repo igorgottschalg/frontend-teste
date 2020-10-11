@@ -160,6 +160,9 @@ export const Features = styled(section)`
     padding: 9rem 0;
   }
   
+  @media (max-width: 600px) {
+    padding-top: 25rem;
+  }
 `;
 
 export const TryFree = styled(section)`
