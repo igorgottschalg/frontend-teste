@@ -9,10 +9,11 @@ const section = styled.section`
 
 export const Hero = styled.section`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
   text-align: center;
-  
+  position: relative;
+
   .wrapper {
     display: flex;
     height: 100%;
@@ -27,6 +28,7 @@ export const Hero = styled.section`
 
     .content {
       max-width: 30rem;
+      z-index: 5;
 
       h1 {
         font-size: 5rem;
@@ -72,6 +74,44 @@ export const Hero = styled.section`
     }
   }
 
+  @media (max-width: 1080px) {
+    .wrapper img {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 980px) {
+    .wrapper img {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 880px) {
+    .wrapper {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20rem;
+
+      img {
+        width: 100%;
+        margin: 0;
+      }
+
+      .content {
+        order: -1;
+
+        button {
+          position: absolute;
+          bottom: -6.577rem;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+
 `;
 
 export const Features = styled(section)`
@@ -103,7 +143,7 @@ export const Features = styled(section)`
   .content {
     display: grid;
     grid-template-columns: repeat(auto-fit, 25.5rem);
-    grid-gap: 5rem;
+    grid-gap: 9rem 5rem;
     justify-content: center;
     align-items: center;
 
