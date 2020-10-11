@@ -12,7 +12,8 @@ export const Hero = styled.section`
   height: 100vh;
   background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
   text-align: center;
-  
+  position: relative;
+
   .wrapper {
     display: flex;
     height: 100%;
@@ -27,6 +28,7 @@ export const Hero = styled.section`
 
     .content {
       max-width: 30rem;
+      z-index: 5;
 
       h1 {
         font-size: 5rem;
@@ -53,7 +55,7 @@ export const Hero = styled.section`
   /* Estilização da 'wave' na section */
   .wave {
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -69,6 +71,52 @@ export const Hero = styled.section`
 
     .shape-fill {
       fill: #252B42;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .wrapper img {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 980px) {
+    .wrapper img {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 880px) {
+    height: auto;
+
+    .wrapper {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20rem;
+
+      img {
+        width: 100%;
+        margin: 0;
+      }
+
+      .content {
+        order: -1;
+
+        button {
+          position: absolute;
+          bottom: -6.577rem;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .wrapper .content button {
+      bottom: -10rem;
     }
   }
 
@@ -103,7 +151,7 @@ export const Features = styled(section)`
   .content {
     display: grid;
     grid-template-columns: repeat(auto-fit, 25.5rem);
-    grid-gap: 5rem;
+    grid-gap: 9rem 5rem;
     justify-content: center;
     align-items: center;
 
@@ -112,6 +160,9 @@ export const Features = styled(section)`
     padding: 9rem 0;
   }
   
+  @media (max-width: 600px) {
+    padding-top: 25rem;
+  }
 `;
 
 export const TryFree = styled(section)`
@@ -379,6 +430,18 @@ export const ContactSection = styled.section`
     width: 100%;
     justify-content: center;
   }
+
+  @media (max-width: 800px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+
+      form {
+        order: 1;
+        margin-top: 7.669rem;
+      }
+    }
+  }
 `;
 
 export const Footer = styled(section)`
@@ -409,6 +472,14 @@ export const Footer = styled(section)`
 
         }
       }
+    }
+  }
+
+  @media ( max-width: 880px) {
+    flex-direction: column;
+
+    iframe {
+      margin: 5.5rem 0 6.5rem 0;
     }
   }
 `;
